@@ -1,0 +1,166 @@
+PROGRAM:
+num1 = 5
+print(num1, 'is of type', type(num1))
+num2 = 5.42
+print(num2, 'is of type', type(num2))
+num3 = 8+2j
+print(num3, 'is of type', type(num3))
+OUTPUT:
+5 is of type <class 'int'>
+5.42 is of type <class 'float'>
+(8+2j) is of type <class 'complex'>
+PROGRAM:
+print(0b1101011)  # prints 107
+print(0xFB + 0b10)  # prints 253
+print(0o15)  # prints 13
+OUTPUT:
+107
+253
+13
+PROGRAM:
+print(1 + 2.0) # prints 3.0
+OUTPUT:
+3.0
+PROGRAM:
+num1 = int(2.3)
+print(num1)  # prints 2
+num2 = int(-2.8)
+print(num2)  # prints -2
+num3 = float(5)
+print(num3) # prints 5.0
+num4 = complex('3+5j')
+print(num4)  # prints (3 + 5j)
+OUTPUT:
+2
+-2
+5.0
+(3+5j)
+PROGRAM:
+import random
+print(random.randrange(10, 20))
+list1 = ['a', 'b', 'c', 'd', 'e']
+# get random item from list1
+print(random.choice(list1))
+# Shuffle list1
+random.shuffle(list1)
+# Print the shuffled list1
+print(list1)
+# Print random element
+print(random.random())
+OUTPUT:
+18
+c
+['a', 'c', 'd', 'e', 'b']
+0.2812186266769642
+PROGRAM:
+import math
+print(math.pi)
+print(math.cos(math.pi))
+print(math.exp(10))
+print(math.log10(1000))
+print(math.sinh(1))
+print(math.factorial(6))
+OUTPUT:
+3.141592653589793
+-1.0
+22026.465794806718
+3.0
+1.1752011936438014
+720
+WRITE A FUNCTION TO COMPUTE THE AREA OF A CIRCLE ROUNDED OFF TO TWO DECIMAL PLACES.
+The area of a circle is calculated using the formula pi * radius^2.
+For example, if radius = 5, the expected OUTPUT: is 78.54.
+PROGRAM:
+import math
+def circle_area(radius: float) -> float:
+    area = math.pi * (radius ** 2)
+    return round(area, 2)
+# Example usage:
+radius = 5
+print(f"Area of circle with radius {radius} = {circle_area(radius)}")
+OUTPUT:
+Area of circle with radius 5 = 78.54
+PYTHON PROGRAM: WRITE A FUNCTION TO COMPUTE THE AREA OF A CIRCLE ROUNDED OFF TO TWO DECIMAL PLACES.
+The area of a circle is calculated using the formula pi * radius^2.
+For example, if radius = 5, the expected OUTPUT: is 78.54.
+PROGRAM:
+Import math
+def calculate_area(radius) :
+Here’s the complete Python PROGRAM: with the function calculate_area(radius) as you asked:
+import math
+def calculate_area(radius):
+    area = math.pi * (radius ** 2)
+    return round(area, 2)
+# Example usage
+radius = 5
+print(calculate_area(radius))   # Expected OUTPUT: 78.54
+OUTPUT:
+78.54
+👉 This follows your requirement:
+Uses math.pi
+Implements the formula π * r²
+Rounds off to two decimal places
+PROGRAM:
+# a list of three elements
+ages = [19, 26, 29]
+print(ages)
+OUTPUT:
+[19, 26, 29]
+PROGRAM:
+# a list containing strings, numbers and another list
+student = ['Jack', 32, 'Computer Science', [2, 4]]
+print(student)
+# an empty list
+empty_list = []
+print(empty_list)
+OUTPUT:
+['Jack', 32, 'Computer Science', [2, 4]]
+[]
+PROGRAM:
+languages = ['Python', 'Swift', 'C++']
+# access the first element
+print('languages[0] =', languages[0])
+# access the third element
+print('languages[2] =', languages[2])
+OUTPUT:
+languages[0] = Python
+languages[2] = C++
+PROGRAM:
+languages = ['Python', 'Swift', 'C++']
+# access the last item
+print('languages[-1] =', languages[-1])
+# access the third last item
+print('languages[-3] =', languages[-3]) 
+OUTPUT:
+languages[-1] = C++
+languages[-3] = Python
+PROGRAM:
+my_list = ['p', 'r', 'o', 'g', 'r', 'a', 'm']
+print("my_list =", my_list)
+# get a list with items from index 2 to index 4 (index 5 is not included)
+print("my_list[2: 5] =", my_list[2: 5])
+# get a list with items from index 2 to index -3 (index -2 is not included)
+print("my_list[2: -2] =", my_list[2: -2])  
+# get a list with items from index 0 to index 2 (index 3 is not included)
+print("my_list[0: 3] =", my_list[0: 3])
+OUTPUT:
+my_list = ['p', 'r', 'o', 'g', 'r', 'a', 'm']
+my_list[2: 5] = ['o', 'g', 'r']
+my_list[2: -2] = ['o', 'g', 'r']
+my_list[0: 3] = ['p', 'r', 'o']
+PROGRAM:
+my_list = ['p', 'r', 'o', 'g', 'r', 'a', 'm']
+print("my_list =", my_list)
+# get a list with items from index 5 to last
+print("my_list[5: ] =", my_list[5: ])
+# get a list from the first item to index -5
+print("my_list[: -4] =", my_list[: -4])
+# omitting both start and end index
+# get a list from start to end items
+print("my_list[:] =", my_list[:])
+OUTPUT:
+my_list = ['p', 'r', 'o', 'g', 'r', 'a', 'm']
+my_list[5: ] = ['a', 'm']
+my_list[: -4] = ['p', 'r', 'o']
+my_list[:] = ['p', 'r', 'o', 'g', 'r', 'a', 'm']
+
