@@ -96,7 +96,7 @@ radius = 5
 print(calculate_area(radius))   # Expected OUTPUT: 78.54
 OUTPUT:
 78.54
-👉 This follows your requirement:
+This follows your requirement:
 Uses math.pi
 Implements the formula π * r²
 Rounds off to two decimal places
